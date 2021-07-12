@@ -1,0 +1,527 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "id": 2,
+  "links": [],
+  "panels": [
+    {
+      "collapsed": true,
+      "datasource": null,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 14,
+      "panels": [
+        {
+          "datasource": null,
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "custom": {
+                "align": "auto",
+                "displayMode": "auto",
+                "filterable": false
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 24,
+            "x": 0,
+            "y": 1
+          },
+          "id": 12,
+          "options": {
+            "showHeader": true
+          },
+          "pluginVersion": "7.5.9",
+          "targets": [
+            {
+              "options": {
+                "gitRef": "",
+                "query": "is:issue is:open ",
+                "timeField": 0
+              },
+              "owner": "DadosAbertosDeFeira",
+              "queryType": "Issues",
+              "refId": "A",
+              "repository": "iac-docker-tika"
+            }
+          ],
+          "title": "Issues no repositório DadosAbertosDeFeira/iac-docker-tika",
+          "transformations": [
+            {
+              "id": "organize",
+              "options": {
+                "excludeByName": {
+                  "author_company": true,
+                  "closed": true,
+                  "closed_at": true,
+                  "created_at": true,
+                  "number": false,
+                  "repo": false
+                },
+                "indexByName": {},
+                "renameByName": {
+                  "title": ""
+                }
+              }
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "datasource": null,
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "custom": {
+                "align": "auto",
+                "displayMode": "auto",
+                "filterable": false
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": [
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "number"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 127
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 24,
+            "x": 0,
+            "y": 7
+          },
+          "id": 15,
+          "options": {
+            "showHeader": true,
+            "sortBy": [
+              {
+                "desc": false,
+                "displayName": "state"
+              }
+            ]
+          },
+          "pluginVersion": "7.5.9",
+          "targets": [
+            {
+              "options": {
+                "gitRef": "",
+                "query": "is:pr is:open",
+                "timeField": 3
+              },
+              "owner": "DadosAbertosDeFeira",
+              "queryType": "Pull_Requests",
+              "refId": "A",
+              "repository": "iac-docker-tika"
+            }
+          ],
+          "title": "Pull Requests no repositório DadosAbertosDeFeira/iac-docker-tika",
+          "transformations": [
+            {
+              "id": "organize",
+              "options": {
+                "excludeByName": {
+                  "author_company": true,
+                  "author_email": true,
+                  "closed": true,
+                  "closed_at": true,
+                  "created_at": true,
+                  "is_draft": false,
+                  "locked": true,
+                  "mergeable": true,
+                  "merged": true,
+                  "number": false,
+                  "repo": false,
+                  "repository": true,
+                  "state": false
+                },
+                "indexByName": {},
+                "renameByName": {
+                  "title": ""
+                }
+              }
+            }
+          ],
+          "type": "table"
+        }
+      ],
+      "title": "Dados Abertos de Feira - iac-docker-tika",
+      "type": "row"
+    },
+    {
+      "collapsed": true,
+      "datasource": null,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 1
+      },
+      "id": 7,
+      "panels": [
+        {
+          "datasource": null,
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "custom": {
+                "align": "auto",
+                "displayMode": "auto",
+                "filterable": false
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": []
+          },
+          "gridPos": {
+            "h": 8,
+            "w": 24,
+            "x": 0,
+            "y": 2
+          },
+          "id": 4,
+          "options": {
+            "showHeader": true
+          },
+          "pluginVersion": "7.5.9",
+          "targets": [
+            {
+              "options": {
+                "gitRef": "",
+                "query": "is:issue is:open ",
+                "timeField": 0
+              },
+              "owner": "DadosAbertosDeFeira",
+              "queryType": "Issues",
+              "refId": "A",
+              "repository": "iac"
+            }
+          ],
+          "title": "Issues no repositório DadosAbertosDeFeira/Iac",
+          "transformations": [
+            {
+              "id": "organize",
+              "options": {
+                "excludeByName": {
+                  "author_company": true,
+                  "closed": true,
+                  "closed_at": true,
+                  "created_at": true,
+                  "number": true,
+                  "repo": false
+                },
+                "indexByName": {},
+                "renameByName": {
+                  "title": ""
+                }
+              }
+            }
+          ],
+          "type": "table"
+        },
+        {
+          "datasource": null,
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "custom": {
+                "align": "auto",
+                "displayMode": "auto",
+                "filterable": false
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": [
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "number"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 48
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 6,
+            "w": 24,
+            "x": 0,
+            "y": 10
+          },
+          "id": 5,
+          "options": {
+            "showHeader": true,
+            "sortBy": [
+              {
+                "desc": false,
+                "displayName": "state"
+              }
+            ]
+          },
+          "pluginVersion": "7.5.9",
+          "targets": [
+            {
+              "options": {
+                "gitRef": "",
+                "query": "is:pr is:open",
+                "timeField": 3
+              },
+              "owner": "DadosAbertosDeFeira",
+              "queryType": "Pull_Requests",
+              "refId": "A",
+              "repository": "iac"
+            }
+          ],
+          "title": "Pull Requests no repositório DadosAbertosDeFeira/Iac",
+          "transformations": [
+            {
+              "id": "organize",
+              "options": {
+                "excludeByName": {
+                  "author_company": true,
+                  "author_email": true,
+                  "closed": true,
+                  "closed_at": true,
+                  "created_at": true,
+                  "locked": true,
+                  "mergeable": true,
+                  "merged": true,
+                  "number": false,
+                  "repo": false,
+                  "repository": true
+                },
+                "indexByName": {},
+                "renameByName": {
+                  "title": ""
+                }
+              }
+            }
+          ],
+          "type": "table"
+        }
+      ],
+      "title": "Dados Abertos de Feira  - IaC",
+      "type": "row"
+    },
+    {
+      "collapsed": true,
+      "datasource": null,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 2
+      },
+      "id": 9,
+      "panels": [
+        {
+          "datasource": null,
+          "fieldConfig": {
+            "defaults": {
+              "color": {
+                "mode": "thresholds"
+              },
+              "custom": {
+                "align": "auto",
+                "displayMode": "auto",
+                "filterable": false
+              },
+              "mappings": [],
+              "thresholds": {
+                "mode": "absolute",
+                "steps": [
+                  {
+                    "color": "green",
+                    "value": null
+                  },
+                  {
+                    "color": "red",
+                    "value": 80
+                  }
+                ]
+              }
+            },
+            "overrides": [
+              {
+                "matcher": {
+                  "id": "byName",
+                  "options": "number"
+                },
+                "properties": [
+                  {
+                    "id": "custom.width",
+                    "value": 73
+                  }
+                ]
+              }
+            ]
+          },
+          "gridPos": {
+            "h": 7,
+            "w": 24,
+            "x": 0,
+            "y": 3
+          },
+          "id": 11,
+          "options": {
+            "showHeader": true,
+            "sortBy": []
+          },
+          "pluginVersion": "7.5.9",
+          "targets": [
+            {
+              "options": {
+                "gitRef": "",
+                "query": "is:pr is:open ",
+                "timeField": 3
+              },
+              "owner": "mentoriaiac",
+              "queryType": "Pull_Requests",
+              "refId": "A",
+              "repository": ""
+            }
+          ],
+          "title": "Pull Requests na org do  Mentoria IaC",
+          "transformations": [
+            {
+              "id": "organize",
+              "options": {
+                "excludeByName": {
+                  "author_company": true,
+                  "closed": true,
+                  "closed_at": true,
+                  "created_at": true,
+                  "locked": true,
+                  "mergeable": true,
+                  "merged": true,
+                  "merged_at": true,
+                  "number": false,
+                  "repo": false,
+                  "repository": false,
+                  "updated_at": true
+                },
+                "indexByName": {},
+                "renameByName": {
+                  "title": ""
+                }
+              }
+            }
+          ],
+          "type": "table"
+        }
+      ],
+      "title": "Mentoria IaC",
+      "type": "row"
+    }
+  ],
+  "schemaVersion": 27,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-6M",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "mentoria iac github",
+  "uid": "EDsEFgknk",
+  "version": 4
+}
