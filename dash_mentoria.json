@@ -82,7 +82,7 @@
               "repository": "iac-docker-tika"
             }
           ],
-          "title": "Issues no repositório DadosAbertosDeFeira/iac-docker-tika",
+          "title": "Issues no repositório DadosAbertosDeFeira/iac-docker-tika TEST",
           "transformations": [
             {
               "id": "organize",
