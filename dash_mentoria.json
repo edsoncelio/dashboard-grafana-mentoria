@@ -505,7 +505,7 @@
           "type": "table"
         }
       ],
-      "title": "Mentoria IaC",
+      "title": "Mentoria IaC - Com Terraform",
       "type": "row"
     }
   ],
@@ -522,6 +522,6 @@
   "timepicker": {},
   "timezone": "",
   "title": "mentoria iac github",
-  "uid": "EDsEFgknk",
+  "uid": "EDsEFgknks",
   "version": 4
 }
